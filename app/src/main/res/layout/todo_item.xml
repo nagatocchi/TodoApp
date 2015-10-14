@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:focusable="false"
+        android:id="@+id/list_item_background">
+        <!--<LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        </LinearLayout>-->
+
+        <ToggleButton
+            android:id="@+id/todo_fav"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:button="@android:drawable/btn_star"
+            android:textOff=""
+            android:focusable="false"
+            android:textOn="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/todoListName"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:paddingTop="16dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Name"
+                android:focusable="false"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:paddingBottom="0dp" />
+
+            <TextView
+                android:id="@+id/todoListDate"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:paddingBottom="14dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Date"
+                android:focusable="false"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

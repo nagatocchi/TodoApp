@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.todo.androidapp.DetailActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/todo_edit_summary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:hint="@string/todo_edit_name" >
+        </EditText>
+
+        <ToggleButton
+            android:id="@+id/todo_favorite"
+            android:button="@android:drawable/btn_star"
+            android:background="@android:color/transparent"
+            android:textOn=""
+            android:textOff=""
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:onClick="onToggleClicked"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/editDate"
+            android:layout_weight="0.5"
+            android:text="@string/pick_date"
+            android:clickable="true"
+            android:onClick="showDatePickerDialog"
+            android:paddingLeft="4dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/editTime"
+            android:layout_weight="0.5"
+            android:text="@string/pick_time"
+            android:clickable="true"
+            android:onClick="showTimePickerDialog"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Done"
+            android:textColor="@color/secondary_text"
+            android:id="@+id/doneCheck"
+            android:onClick="onChecked"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/todo_edit_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="@string/todo_edit_description"
+        android:inputType="textMultiLine"
+        android:gravity="top">
+    </EditText>
+
+    <RelativeLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/todo_edit_button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/todo_edit_confirm">
+         </Button>
+
+         <Button
+            android:id="@+id/todo_delete_button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/todo_delete">
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

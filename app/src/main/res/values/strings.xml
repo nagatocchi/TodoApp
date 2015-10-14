@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_urgent">Sort by Urgency</string>
+    <string name="action_date">Sort by Date</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="todo_edit_name">Name</string>
+    <string name="todo_edit_description">Description</string>
+    <string name="todo_edit_confirm">Save</string>
+    <string name="todo_create_confirm">Create</string>
+    <string name="todo_delete">Delete</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="pick_time">Time</string>
+    <string name="pick_date">Date</string>
+    <string name="dialog_delete_confirm">Delete</string>
+    <string name="dialog_delete">Delete this todo?</string>
+    <string name="dialog_discard">Discard new todo?</string>
+    <string name="dialog_discard_confirm">Discard</string>
+    <string name="dialog_warning_title">Warning</string>
+    <string name="dialog_warning">No connection to \nWeb-Application possible</string>
+    <string name="dialog_warning_neutral">OK</string>
+    <string name="new_todo">New Todo</string>
+</resources>
